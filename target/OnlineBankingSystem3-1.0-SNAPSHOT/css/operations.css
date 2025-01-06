@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e0e0e0);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1920uuuuupx;
+    margin: auto;
+
+}
+
+header {
+    background: linear-gradient(135deg, #6a0dad, #ff4081); /* Gradient */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.josefin-sans {
+                   font-family: "Josefin Sans", sans-serif;
+                   font-optical-sizing: auto;
+                   font-weight: 100;
+                   font-style: normal;
+               }
+
+.card {
+    margin-top: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(30% - 20px); /* Responsive card width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card input[type="text"],
+.card input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card button {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color:#ff4081; /* Pink */
+    transition-duration:.3s; /* Smooth transition */
+    cursor:pointer; /* Pointer on hover */
+}
+
+footer {
+    text-align:center;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    background-color:#6a0dad; /* Purple footer */
+    color:white;
+
+    width:100%;
+    bottom:-50px; /* Stick to bottom */
+}

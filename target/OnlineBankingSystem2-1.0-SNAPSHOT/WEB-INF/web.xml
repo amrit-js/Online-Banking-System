@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>Online Banking System</display-name>
+
+    <!-- Welcome file list -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.example.onlinebankingsystem2.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Additional servlets can be defined here -->
+    <servlet>
+        <servlet-name>OperationsServlet</servlet-name>
+        <servlet-class>org.example.onlinebankingsystem2.OperationsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OperationsServlet</servlet-name>
+        <url-pattern>/operations</url-pattern>
+    </servlet-mapping>
+
+    <!-- Context parameters can be defined here if needed -->
+    <context-param>
+        <param-name>someParam</param-name>
+        <param-value>someValue</param-value>
+    </context-param>
+
+    <!-- Error pages can be configured here -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+</web-app>

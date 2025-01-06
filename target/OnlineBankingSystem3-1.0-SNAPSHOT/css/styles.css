@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6a0dad, #a45ee5);
+    font-family: 'abel', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 20px;
+}
+
+.form-container {
+    position: relative;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-family: Abel;
+}
+
+input::placeholder {
+    color: transparent; /* Hide default placeholder */
+}
+
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+
+    margin-bottom: auto;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -15px; /* Move label up */
+    font-size: 12px; /* Smaller font size */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4081; /* Pink */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f50057; /* Darker Pink */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
